@@ -1,0 +1,29 @@
+
+h1{
+  color: var(--Very-dark-desaturated-blue);
+  margin:0;
+}
+:root{
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+.cuerpo{
+  background-color: var(--Dark-cyan);
+  margin:0;
+  padding: 50px;
+}
+.card{
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+.image{
+  border-radius: 50px;
+}
+.social >*{
+  display: inline;
+  font-size: 50px;
+/* display: flex; */
+}
