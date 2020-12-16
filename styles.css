@@ -2,28 +2,68 @@
 h1{
   color: var(--Very-dark-desaturated-blue);
   margin:0;
+  margin-top: 25PX;
+  font-size: 25px;
+}
+h1 span{
+  color: var(--Dark-gray);
+  font-weight: 400;
+  margin-left: 5px;
+}
+h2{
+  color: var(--Dark-gray);
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 :root{
   --Dark-cyan: hsl(185, 75%, 39%);
   --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
   --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+
 }
 .cuerpo{
+  display: flex;
+  justify-content: center;
   background-color: var(--Dark-cyan);
+  background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: left -30% top 90%, right -20% bottom 250%;
   margin:0;
   padding: 50px;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 .card{
-  background-color: white;
+  background: white url('./images/bg-pattern-card.svg') repeat-x;
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
+  padding-top: 80px;
+  max-width: 500px;
+  flex-shrink: 0;
+  flex-grow: 1;
 }
 .image{
-  border-radius: 50px;
+  border-radius: 50%;
+  border: 8px solid white;
 }
-.social >*{
-  display: inline;
-  font-size: 50px;
-/* display: flex; */
+/*estilo aplicado al hijo directo de social*/
+.social{
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 0;
+}
+.social h3{
+  font-size: 22px;
+}
+.social h3 small{
+  display: block;
+  color: var(--Dark-gray);
+  font-weight: 400;
+  margin-top: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
